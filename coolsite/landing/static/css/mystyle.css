@@ -1,0 +1,12 @@
+.project .project-hover, .project .post-hover, .post .project-hover, .post .post-hover {
+    background: #fa9805;
+}
+
+.templateux-navbar .templateux-menu ul li a:before {
+    background: #fa9805;
+}
+
+.button.button--red {
+    background: #fa9805;
+}
+
