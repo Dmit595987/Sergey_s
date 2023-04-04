@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
   </head>
-  <body>
+  <body class="bg-dark">
 
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
@@ -35,12 +35,12 @@
               </span>
             </button>
 
-            <nav class="templateux-menu js-templateux-menu" role="navigation">
+            <nav class="templateux-menu js-templateux-menu bg-dark" role="navigation">
               <ul class="list-unstyled">
                 <li class="d-md-none d-block active"><a href="{% url 'index' %}" class="animsition-link">Home</a></li>
 
-                <li><a href="{% url 'about' %}" class="animsition-link">Обо мне</a></li>
-                <li><a href="{% url 'work' %}" class="animsition-link">Свадьба</a></li>
+                <li><a href="{% url 'about' %}" class="animsition-link"><div class="text-white">Обо мне</div></a></li>
+                <li><a href="{% url 'work' %}" class="animsition-link"><div class="text-white">Свадьба</div></a></li>
                 <li><a href="{% url 'secret_master' %}" class="animsition-link">Корпоратив</a></li>
                 <li><a href="{% url 'contact' %}" class="animsition-link">Заказать</a></li>
                 <li><a href="https://dj.ru/neo5/music" class="animsition-link">Мои работы</a></li>
