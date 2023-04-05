@@ -103,7 +103,7 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .templateux-cta { padding: 7em 0; display: block; background: #f8f9fa; position: relative; }
 
-.templateux-cta:before { content: ""; position: absolute; height: 0px; bottom: 0; background: #dc3545; width: 100%; left: 0; -webkit-transition: .3s all ease-out; -o-transition: .3s all ease-out; transition: .3s all ease-out; }
+.templateux-cta:before { content: ""; position: absolute; height: 0px; bottom: 0; background: orange; width: 100%; left: 0; -webkit-transition: .3s all ease-out; -o-transition: .3s all ease-out; transition: .3s all ease-out; }
 
 .templateux-cta .cta-inner { display: block; text-align: center; }
 
@@ -177,9 +177,9 @@ textarea.form-control { height: inherit; }
 
 .go-down { position: relative; width: 40px; height: 40px; display: block; margin-left: -15px; position: absolute; margin-top: 70px; }
 
-.go-down:before { width: 2px; height: 40px; right: 27px; content: ""; display: block; position: absolute; background: #dc3545; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); pointer-events: none; top: 0; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; }
+.go-down:before { width: 2px; height: 40px; right: 27px; content: ""; display: block; position: absolute; background: orange; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); pointer-events: none; top: 0; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; }
 
-.go-down:after { content: ""; position: absolute; left: 50%; bottom: -12px; border: solid transparent; content: " "; height: 0; width: 0; margin-left: -1px; position: absolute; border-top-color: #dc3545; border-width: 7px; margin-left: -7px; }
+.go-down:after { content: ""; position: absolute; left: 50%; bottom: -12px; border: solid transparent; content: " "; height: 0; width: 0; margin-left: -1px; position: absolute; border-top-color: orange; border-width: 7px; margin-left: -7px; }
 
 .go-down:hover { height: 70px; }
 
