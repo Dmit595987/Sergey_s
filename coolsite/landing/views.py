@@ -8,7 +8,7 @@ from .models import Client
 
 def index(request):
     context = {
-        'title': 'Главная страница'
+        'title': 'Главная страница',
     }
     return render(request, 'index.html', context)
 
