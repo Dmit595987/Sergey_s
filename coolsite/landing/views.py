@@ -7,14 +7,14 @@ from .models import Client
 
 def index(request):
     context = {
-        'title': 'Главная страница',
+        'title': 'Главная страница - Dj Neo',
     }
     return render(request, 'index.html', context)
 
 
 def about(request):
     context = {
-        'title': 'Обо мне'
+        'title': 'Event DJ'
     }
     return render(request, 'about.html', context)
 
@@ -29,19 +29,19 @@ def contact(request):
             return redirect('thanks')
     else:
         form = Clients_phone()
-    return render(request, 'contact.html', {'form': form, 'title': "Заказ мероприятия"})
+    return render(request, 'contact.html', {'form': form, 'title': "Заказать лучшую дискотеку"})
 
 
 def work(request):
     context = {
-        'title': 'Свадьба'
+        'title': 'Диджей на свадьбу'
     }
     return render(request, 'work.html', context)
 
 
 def secret_master(request):
     context = {
-        'title': 'Секреты мастерства'
+        'title': 'Корпоратив - Русская дискотека'
     }
     return render(request, 'blog.html', context)
 
@@ -76,6 +76,6 @@ def blog_single(request):
 
 def reviews(request):
     context = {
-        'title': 'Отзывы'
+        'title': 'Отзывы о Диджее'
     }
     return render(request, 'reviews.html', context)
