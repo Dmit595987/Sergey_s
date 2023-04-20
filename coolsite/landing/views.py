@@ -5,7 +5,6 @@ from .forms import Clients_phone
 from .models import Client
 
 
-
 def index(request):
     context = {
         'title': 'Главная страница',
@@ -31,7 +30,6 @@ def contact(request):
     else:
         form = Clients_phone()
     return render(request, 'contact.html', {'form': form, 'title': "Заказ мероприятия"})
-
 
 
 def work(request):
@@ -60,6 +58,7 @@ def work_single(request):
         'title': 'Свадьба только раз...'
     }
     return render(request, 'work-single.html', context)
+
 
 def blog(request):
     context = {

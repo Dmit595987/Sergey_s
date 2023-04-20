@@ -1,4 +1,3 @@
-
 from django import forms
 from django.core.exceptions import ValidationError
 
@@ -20,21 +19,21 @@ class Clients_phone(forms.ModelForm):
 
         }
 
-    def clean_phone(self):
-        phone = self.cleaned_data['phone']
-        if phone[0] == '+':
-            if not all([item.isdigit() for item in phone[1:]]):
-                raise ValidationError('Номер телефона может состоять только из цифр!')
-        else:
-            if not all([item.isdigit() for item in phone]):
-                raise ValidationError('Номер телефона может состоять только из цифр!')
-
-        return phone
+    # def clean_phone(self):
+    #     phone = self.cleaned_data['phone']
+    #     if phone[0] == '+':
+    #         if not all([item.isdigit() for item in phone[1:]]):
+    #             raise ValidationError('Номер телефона может состоять только из цифр!')
+    #     else:
+    #         if not all([item.isdigit() for item in phone]):
+    #             raise ValidationError('Номер телефона может состоять только из цифр!')
+    #
+    #     return phone
 
     def clean_comment_client(self):
         comment_client = self.cleaned_data['comment_client']
         if len(comment_client) > 201:
-            raise ValidationError('Длина коментрия не может превышать 200 символов!')
+            raise ValidationError('Длина коментария не может превышать 200 символов!')
         return comment_client
 
     def save(self, commit=True):
